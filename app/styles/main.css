@@ -1,0 +1,134 @@
+body {
+    line-height: 0;
+    /*-webkit-column-count: 3;
+    -webkit-column-gap: 0px;*/
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    /*background-color: black;*/
+    text-align: center;
+    /*background-color: crimson;*/
+    padding-top: 47px;
+}
+
+.thumbnail-container {
+ position: relative;
+ /*
+ height: 360px;
+ width: 480px;*/
+
+ height: 222px;
+ width: 295px;
+
+ overflow: hidden;
+ display: inline-block;
+
+ margin: 5px;
+ border-radius: 6px;
+ /*float: left;*/
+}
+
+.thumbnail-container h1 {
+position: absolute;
+top: 4px;
+color: white;
+text-align: center;
+font-size: 14px;
+width: 100%;
+line-height: 17px;
+}
+
+.thumbnail-container iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.hover-video {
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.thumbnail {
+    /*position: absolute;*/
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail:nth-child(2){
+
+}
+
+@-webkit-keyframes playImages {
+    /*
+  0%   { top: -360px; }
+  32.9%  { top: -360px; }
+
+  33%  { top: -720px; }
+  65.9%  { top: -720px; }
+
+  66%  { top: -1080px; }
+  100% { top: -1080px; }*/
+
+  0%   { top: -222px; }
+  32.9%  { top: -222px; }
+
+  33%  { top: -444px; }
+  65.9%  { top: -444px; }
+
+  66%  { top: -666px; }
+  100% { top: -666px; }
+}
+
+
+.thumbnail-container:hover .thumbnail-scroll{
+    cursor: pointer;
+    -webkit-animation: playImages 3s infinite;
+}
+
+.thumbnail-container:hover .hover-video{
+    display: block;
+}
+
+.thumbnail-scroll {
+ position: relative;
+ top: 0px;
+}
+
+.fa:hover{
+    color: gray !important;
+    cursor: pointer;
+}
+
+.thumbnail-container .fa-play{
+    color: white;
+    top: 50%;
+    position: absolute;
+    font-size: 60px;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -15px;
+    display: block !important;
+}
+
+.menu-player .fa{
+color: white;
+font-size: 21px;
+margin: 12px;
+}
+
+#video-name{
+    color: white;
+    padding-top: 8px;
+    font-family: Lato;
+}
+
+.top-bar .name h1 a{
+    font-family: Lato;
+    font-size: 21px;
+}
